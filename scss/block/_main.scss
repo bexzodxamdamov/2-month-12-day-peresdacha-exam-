@@ -1,0 +1,145 @@
+.main {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 80px auto;
+}
+.main-section {
+  @include flex;
+  justify-content: space-between;
+}
+.main-wrapper {
+  @include flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.main-list {
+  @include block;
+  list-style-type: none;
+}
+.main-list-title {
+  @include block;
+}
+.main-image {
+  padding-bottom: 20px;
+}
+.main-title {
+  @include text-style__4;
+  padding-bottom: 20px;
+  color: $dark-grey;
+}
+.main-subtitle {
+  @include text-style__1;
+  color: $grey;
+}
+.main-section-1 {
+  margin: 120px 0 0;
+  @include flex;
+  justify-content: space-between;
+}
+.main-image-2 {
+  border-radius: 230px;
+}
+.main-wrapper-list {
+  @include block;
+  max-width: 445px;
+}
+.main-wrapper-title {
+  @include text-style__5;
+  color: $dark-grey;
+  padding-bottom: 20px;
+}
+.main-wrapper-subtitle {
+  @include text-style__1;
+  color: $grey;
+}
+.main-wrapper-button {
+  @include text-style__2;
+  color: $white;
+  background-color: $yellow;
+  padding: 10px 20px;
+
+  &:hover {
+    color: $yellow;
+    background-color: $white;
+    border: 3px solid $yellow;
+
+    padding: 10px 20px;
+  }
+}
+
+.main-section-1-2 {
+  display: none;
+}
+
+.main-section-2 {
+  @include flex;
+  justify-content: space-between;
+  margin: 60px 0 60px;
+}
+.main-section-3 {
+  @include flex;
+  justify-content: space-between;
+}
+.main-wrapper-3 {
+  @include flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.main-wrapper-3-list {
+  @include block;
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-wrapper {
+    display: block;
+    width: 600px;
+  }
+  .main-list {
+    display: flex;
+    padding: 10px 0 10px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .main-wrapper-2 {
+    display: block;
+  }
+  .main-list {
+    @include block-2;
+    padding: 10px 0 10px;
+  }
+  .main-list-title {
+    @include block-2;
+  }
+  .main-image-2 {
+    width: 310px;
+    height: 310px;
+  }
+  .main-wrapper-title {
+    @include text-style__6;
+    color: $dark-grey;
+  }
+  .main-wrapper-subtitle {
+    color: $grey;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .main-section-1-2 {
+    @include block-2;
+  }
+  .main-wrapper-list {
+    @include block-2;
+  }
+  .main-section-2 {
+    @include block-2;
+  }
+  .main-wrapper-2-list {
+    @include block-2;
+  }
+  .main-section-1 {
+    display: none;
+  }
+  .main-section-3 {
+    display: none;
+  }
+}

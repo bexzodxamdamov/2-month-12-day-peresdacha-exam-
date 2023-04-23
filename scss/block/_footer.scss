@@ -1,0 +1,97 @@
+.footer {
+  max-width: 1440px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+.footer-container {
+  margin: 100px 0 0;
+}
+.footer-wrapper {
+  @include flex;
+  justify-content: space-evenly;
+  background-color: $light-blue;
+  padding: 30px 0 30px;
+}
+.footer-list {
+  @include block-2;
+}
+.footer-title {
+  @include text-style__5;
+  color: $white;
+}
+.footer-subtitle {
+  @include text-style__5;
+  color: $white;
+}
+.footer-buttons {
+  @include flex;
+  justify-content: center;
+  gap: 30px;
+}
+.footer-button {
+  @include text-style__7;
+  color: $grey;
+  background-color: $white;
+  padding: 10px 20px;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $light-white;
+  }
+}
+.footer-button > span {
+  @include text-style__8;
+  color: $grey;
+  background-color: $white;
+
+  &:hover {
+    background-color: $light-white;
+  }
+}
+.footer-wrapper2 {
+  display: none;
+}
+.footer-wrapper-2 {
+  @include flex;
+  justify-content: space-evenly;
+  background-color: $black;
+  padding: 20px 0 20px;
+}
+.footer-list-2 {
+  @include flex;
+  gap: 25px;
+}
+.footer-list-title {
+  @include text-style__2;
+  color: $grey;
+
+  &:hover {
+    color: $yellow;
+  }
+}
+.footer-icons {
+  @include flex;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 820px) {
+  .footer-wrapper2 {
+    @include block-2;
+    background-color: $light-blue;
+  }
+  .footer-title {
+    @include text-style__9;
+    color: $light-white;
+  }
+  .footer-subtitle {
+    @include text-style__9;
+    color: $light-white;
+  }
+  .footer-button {
+    @include text-style__7;
+    color: $grey;
+  }
+  .footer-wrapper {
+    display: none;
+  }
+}
